@@ -23,12 +23,15 @@ pip install opencv-python mediapipe numpy
 ---
 
 ## Gesture Mapping
-Gesture	     Action	       Description
-[1,1,0,0,0]	  Zoom	         Pinch thumb + index to zoom in/out
-[1,1,1,0,0]	  Rotate X	     Tilt hand to rotate on X axis
-[1,1,1,1,0]	  Rotate Y	     Tilt hand to rotate on Y axis
-[1,1,1,1,1]	  Rotate Z	     Rotate hand to spin image (Z axis)
-[0,0,0,0,0]	  Reset	         Reset zoom and rotation
+
+| Gesture        | Action    | Description                          |
+|----------------|-----------|--------------------------------------|
+| [1,1,0,0,0]    | Zoom      | Pinch thumb + index to zoom in/out   |
+| [1,1,1,0,0]    | Rotate X  | Tilt hand to rotate on X axis        |
+| [1,1,1,1,0]    | Rotate Y  | Tilt hand to rotate on Y axis        |
+| [1,1,1,1,1]    | Rotate Z  | Rotate hand to spin image (Z axis)   |
+| [0,0,0,0,0]    | Reset     | Reset zoom and rotation              |
+
 
 ## How it Works
 * MediaPipe detects 21 hand landmarks per frame
@@ -67,3 +70,6 @@ Gesture	     Action	       Description
 ├── sample.jpeg         # Image for gesture manipulation
 └── README.md           # Project documentation
 ```
+
+## Results
+
